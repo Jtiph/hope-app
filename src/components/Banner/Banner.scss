@@ -1,0 +1,21 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 12rem;
+  &__title {
+    margin: 0;
+  }
+  &__title-name {
+    font-size: 3rem;
+    width: 100%;
+    margin: 1rem 0;
+    font-family: "Waiting for the Sunrise", serif;
+  }
+}
+
+.banner-subtitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}

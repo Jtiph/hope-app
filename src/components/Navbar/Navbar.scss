@@ -1,0 +1,43 @@
+.navbar {
+  display: flex;
+  justify-content: space-between; // Espace entre les icônes et le menu
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+  border-bottom: 3px solid #60b3d7;
+}
+.logo img {
+  height: 40px;
+  margin-right: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  font-size: 24px;
+  a {
+    color: #1d3e56;
+  }
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  li {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+    list-style-type: none;
+    color: #1d3e56;
+    font-weight: bold;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}

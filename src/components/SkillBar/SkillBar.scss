@@ -1,0 +1,52 @@
+.skill-bar {
+    margin-bottom: 1.5rem;
+  
+    .skill-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.5rem;
+  
+      .icon {
+        font-size: 30px; 
+        color: #3e7a8c; 
+      }
+    }
+  
+    .bar-container {
+      background-color: rgba(200, 200, 200, 0.5);
+      border-radius: 10px;
+      height: 25px;
+      position: relative;
+      overflow: hidden;
+    }
+  
+    .progress-bar {
+      background-color: #7fc97f; 
+      height: 100%;
+      border-radius: 10px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      transition: width 1.5s ease-in-out;
+  
+      .leaf-icon {
+        font-size: 24px;
+        color: #3e7a8c; 
+        position: absolute;
+        right: -25px; /* Position de départ de la feuille hors de la barre */
+        animation: moveLeaf 1.5s ease-in-out forwards;
+      }
+    }
+  }
+  
+  /* Animation de la feuille qui se déplace avec la progression de la barre */
+  @keyframes moveLeaf {
+    0% {
+      right: -25px; /* Feuille en dehors de la barre au début */
+    }
+    100% {
+      right: 5px; /* Feuille à l'extrémité de la barre une fois pleine */
+    }
+  }
+  

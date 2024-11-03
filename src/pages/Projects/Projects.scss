@@ -1,0 +1,7 @@
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colonnes de taille égale */
+  grid-gap: 30px; /* Espace entre les éléments de la grille */
+  margin: 2rem auto;
+  padding: 40px 15px; /* Espacement intérieur */
+}
